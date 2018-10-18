@@ -10,20 +10,26 @@
 
 <h2>Exercises:</h2>
 <ol>
-	<li>
-		We had to download resources for the lab session and unzip them in our home directory
-	</li>
-	<li>
-		We had to create a bunch of directories/files in public_html (a few being copied from the lab resources), ensuring that "others" had read permissions on everything and execute permissions on just the directories
-	</li>
-
+	<li>Download resources for the lab session and unzip them to the home directory</li>
+	<li>Create a cs133 directory in our public_html directory with...</li>
+	<ul>
+		<li>A cover page of sorts by copying index.html from the lab resources</li>
+		<li>A page outling our cs background called background.html</li>
+		<li>Directories for each lab to come</li>
+		<li>A weekly entry of exercises and commands for lab 1 called index.html</li>
+		<li>Read permissions on everything and execute permissions on just the directories for "others"</li>
+	</ul>
 </ol>
 
 <h2>Commands:</h2>
 <ul>
 	<li>
-		You can change the directory that the man path searches in using
+		You can add a directory to the path that man searches by changing the MANPATH shell variable
 		<div class="code">export MANPATH=$(man -w):$PATH</div>
+	</li>
+	<li>
+		You can add permissions for a specific action for everyone 
+		<div class="code">chmod a+$ACTION</div>
 	</li>
 </ul>
 
