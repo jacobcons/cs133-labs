@@ -1,37 +1,34 @@
 <html>
-<head>
-<title>CS133 Professional Skills Lab Diary</title>
-<link rel="stylesheet" type="text/css" href="../diary.css" />
-</head>
+	<head>
+		<title>CS133 Professional Skills Lab Diary</title>
+		<link rel="stylesheet" type="text/css" href="../diary.css" />
+	</head>
+	<body>
+		<h1>Lab 1: UNIX Essentials</h1>
 
-<body>
+		<h2>Exercises:</h2>
+		<ol>
+			<li>Download resources for the lab session and unzip them to the home directory</li>
+			<li>Create a cs133 directory in our public_html directory with...</li>
+			<ul>
+				<li>A cover page of sorts by copying index.html from the lab resources</li>
+				<li>A page outling our cs background called background.html</li>
+				<li>Directories for each lab to come</li>
+				<li>A weekly entry of exercises and commands for lab 1 called index.html</li>
+				<li>Read permissions on everything and execute permissions on just the directories for "others"</li>
+			</ul>
+		</ol>
 
-<h1>Lab 1: UNIX Essentials</h1>
-
-<h2>Exercises:</h2>
-<ol>
-	<li>Download resources for the lab session and unzip them to the home directory</li>
-	<li>Create a cs133 directory in our public_html directory with...</li>
-	<ul>
-		<li>A cover page of sorts by copying index.html from the lab resources</li>
-		<li>A page outling our cs background called background.html</li>
-		<li>Directories for each lab to come</li>
-		<li>A weekly entry of exercises and commands for lab 1 called index.html</li>
-		<li>Read permissions on everything and execute permissions on just the directories for "others"</li>
-	</ul>
-</ol>
-
-<h2>Commands:</h2>
-<ul>
-	<li>
-		You can add a directory to the path that man searches by changing the MANPATH shell variable
-		<div class="code">export MANPATH=$(man -w):$PATH</div>
-	</li>
-	<li>
-		You can add permissions for a specific action for everyone 
-		<div class="code">chmod a+$ACTION</div>
-	</li>
-</ul>
-
-</body>
+		<h2>Commands:</h2>
+		<ul>
+			<li>
+				You can add a directory to the path that man searches by changing the MANPATH shell variable
+				<div class="code">export MANPATH=$(man -w):$PATH</div>
+			</li>
+			<li>
+				You can add permissions for a specific action for everyone
+				<div class="code">chmod a+$ACTION</div>
+			</li>
+		</ul>
+	</body>
 </html>
