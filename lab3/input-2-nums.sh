@@ -1,8 +1,10 @@
-#!/bin/sh
-if [[ "$#" == "2" -a "$1" =~ [0-9] -a "$2" =~ [0-9] ]]
+#!/bin/bash
+pattern="[0-9]"
+if [ "$#" = "2" ] && [[ "$1" =~ $pattern ]] && [[ "$2" =~ $pattern ]]
 then
   echo "OK"
 else
-  echo "Please enter 2 single-digit numeric arguments">&2; exit 1;;
+  echo "Please enter 2 single-digit numeric arguments">&2
+  exit 1
 fi
 exit 0
