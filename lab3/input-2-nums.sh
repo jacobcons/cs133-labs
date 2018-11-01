@@ -1,5 +1,5 @@
 #!/bin/bash
-pattern="[0-9]"
+pattern="^[0-9]$"
 if [ "$#" = "2" ] && [[ "$1" =~ $pattern ]] && [[ "$2" =~ $pattern ]]
 then
   echo "OK"
