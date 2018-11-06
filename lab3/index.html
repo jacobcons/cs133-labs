@@ -8,15 +8,51 @@
 
 		<h2>Exercises:</h2>
 		<ol>
-			<li>runloop.sh compiles Loop.java and then runs it. The process was killed using pkill runloop.sh</li>
-      <li>The loop works by iterating over all the arguments and storing each one in a variable called "a" for a given cycle. This is similar to the enhanced for-loop in java.</li>
+			<li>Find the PID of a named daemon by piping the output of ps to grep</li>
+			<li>Investigate various ways to kill a process; namely using kill, pkill and xkill</li>
+			<li>Create a script called runloop.sh which compiles Loop.java and then runs it. The process was killed using pkill runloop.sh</li>
+			<li>Extend the script to run the java program, sleep for 5 seconds and then kill it</li>
+			<li>Write a script that multiplies two arguments together and outputs the result</li>
+			<li>The loop works by iterating over all the arguments and storing each one in a variable called "a" for a given cycle. This is similar to the enhanced for-loop in java.</li>
+			<li>Use a case statment within said loop to check each argument ensuring that it's a number. Also include a case for a help flag</li>
+			<li>Write a script which sums arguments in pairs and outputs the results</li>
     </ol>
 
 		<h2>Commands:</h2>
 		<ul>
 			<li>
-			  View the changes in code since last commit
-				<div class="code">git diff</div>
+			  Evaluate a mathematical expression
+				<div class="code">expr $EXPRESSION</div>
+			</li>
+			<li>
+					Kill the process with the given PID
+					<div class="code">kill -9 $PID</div>
+			</li>
+			<li>
+					Kill all processes containing the given name
+					<div class="code">pkill $NAME</div>
+			</li>
+			<li>
+					Prompts user to select window of an application and kills all processes associated with said application
+					<div class="code">xkill</div>
+			</li>
+			<li>
+				Case statement in shell
+<pre>
+	<div class="code">
+case $var in
+	pattern1) 
+		Statements 
+		;;
+	pattern2)
+		Statements 
+		;;
+	*) // default condition
+		Statements
+		;;
+esac
+	</div>
+</pre>
 			</li>
 		</ul>
 	</body>

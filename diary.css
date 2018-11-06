@@ -20,3 +20,7 @@ div.code {
 	font-size: 14;
 	font-weight: normal;		/* Can be bold */
 }
+
+pre {
+	margin: 0;
+}
