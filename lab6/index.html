@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<title>CS133 Lab6: LaTeX</title>
+		<link rel="stylesheet" type="text/css" href="../diary.css" />
+	</head>
+	<body>
+		<h1>Lab 6: LaTeX</h1>
+
+		<h2>Exercises:</h2>
+		<ol>
+			<li>Create and compile a basic latex document</li>
+			<li>Create a document using the article document class, 12pt font and two columns. 
+			Then create three sections divided into sub and subsub sections with some content</li>
+			<li>Extend the document by adding some itemised lists, enumerated lists and figures of
+			different placement specifiers and width</li>
+			<li>Create a new document containing an algorithm to print all even numbers from 0 to n
+			with caption and label</li>
+		</ol>
+
+		<h2>Commands:</h2>
+		<ul>
+			<li>
+				Define the document class and global styles
+				<div class="code">\documentclass[styles]{class}</div>
+			</li>
+			<li>
+				Sectioning content
+				<div class="code">\chapter{title}</div>
+				<div class="code">\section{title}</div>
+				<div class="code">\subsection{title}</div>
+				<div class="code">\subsubsection{title}</div>
+			</li>
+			<li>
+				Table of contents
+				<div class="code">\tableofcontents</div>
+			</li>
+			<li>
+				Appendix
+				<div class="code">\appendix</div>
+			</li>
+			<li>
+				Numbered list
+<pre>
+	<div class="code">
+\begin{enumerate}
+\item name
+\end{enumerate}
+	</div>
+</pre>
+			</li>
+			<li>
+				Bullet point list
+<pre>
+	<div class="code">
+\begin{itemize}
+\item name
+\end{itemize}
+	</div>
+</pre>
+			</li>
+			<li>
+				Include graphic
+				<div class="code">\includegraphics[width=value]{Path/To/File.png}</div>
+			</li>
+		</ul>
+	</body>
+</html>
