@@ -1,46 +1,52 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 	<head>
 		<title>CS133 Professional Skills Lab Diary</title>
 		<link rel="stylesheet" type="text/css" href="../diary.css" />
 	</head>
 	<body>
-		<h1>Lab 5: Scripting Exercise</h1>
+		<div class="flex-col">
+	    <div class="container">
+				<h1>Lab 5: Scripting Exercise</h1>
 
-		<h2>Exercises:</h2>
-		<ol>
-			<li>Create a shell script which prints the number of visible files, hidden files, visible
-			directories, hidden directories and total files and directories</li>
-			<li>
-				Extend the script in the following ways:
+				<h2>Exercises:</h2>
+				<ol>
+					<li>Create a shell script which prints the number of visible files, hidden files, visible
+					directories, hidden directories and total files and directories</li>
+					<li>
+						Extend the script in the following ways:
+						<ul>
+							<li>Output the permissions of the public_html folder</li>
+							<li>Recursively output the permissions of all files in said folder</li>
+							<li>Correct any files with the wrong permissions</li>
+							<li>Output the result of those corrections</li>
+						</ul>
+					</li>
+				</ol>
+
+				<h2>Commands:</h2>
 				<ul>
-					<li>Output the permissions of the public_html folder</li>
-					<li>Recursively output the permissions of all files in said folder</li>
-					<li>Correct any files with the wrong permissions</li>
-					<li>Output the result of those corrections</li>
+					<li>
+						Search for files in a directory hierarchy
+						<div class="code">find $STARTING-POINT</div>
+						Excludes given path
+						<div class="code">! -path $PATH</div>
+						only include directories/files respectievly
+						<div class="code">-type d/f</div>
+						Only match files of given name
+						<div class="code">-name $NAME</div>
+					</li>
+					<li>
+						Initialise Array
+						<div class="code">arr=()</div>
+						Append
+						<div class="code">arr+=("")</div>
+						For loop
+						<div class="code">for a in "$arr[@]"</div>
+					</li>
 				</ul>
-			</li>
-		</ol>
-
-		<h2>Commands:</h2>
-		<ul>
-			<li>
-				Search for files in a directory hierarchy 
-				<div class="code">find $STARTING-POINT</div>
-				Excludes given path
-				<div class="code">! -path $PATH</div>
-				only include directories/files respectievly
-				<div class="code">-type d/f</div>
-				Only match files of given name
-				<div class="code">-name $NAME</div> 
-			</li>
-			<li>
-				Initialise Array
-				<div class="code">arr=()</div>
-				Append
-				<div class="code">arr+=("")</div>
-				For loop
-				<div class="code">for a in "$arr[@]"</div>
-			</li>
-		</ul>
+				<a href="../index.html">Take me home!</a>
+			</div>
+		</div>
 	</body>
 </html>
