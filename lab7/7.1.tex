@@ -1,0 +1,36 @@
+\documentclass{IEEEtran}
+\usepackage{cite}
+\usepackage{listings}
+
+\title{7.1 marking point}
+\author{Jacob Cons}
+\date{\today}
+\usepackage{color}
+% Default fixed font does not support bold face
+\DeclareFixedFont{\ttb}{T1}{txtt}{bx}{n}{12} % for bold
+\DeclareFixedFont{\ttm}{T1}{txtt}{m}{n}{12} % for normal
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+
+\begin{document}
+\maketitle
+Book - \cite{A}
+Manual - \cite{B}
+PhD thesis - \cite{C}
+
+\lstset{
+language=Python,
+basicstyle=\ttm,
+keywordstyle=\ttb\color{deepblue},
+stringstyle=\color{deepgreen},
+frame=tb,
+showstringspaces=false
+}
+\begin{lstlisting}
+for i in range(10):
+    print("Hey")
+\end{lstlisting}
+
+\bibliographystyle{ieeetr}
+\bibliography{bibliography}
+\end{document}

@@ -1,0 +1,14 @@
+\begin{thebibliography}{1}
+
+\bibitem{A}
+John, {\em A}.
+\newblock Penguin, 1990.
+
+\bibitem{B}
+{\em B}, 1.2~ed., 1991.
+
+\bibitem{C}
+Mary, {\em C}.
+\newblock PhD thesis, Harvard, 1992.
+
+\end{thebibliography}
